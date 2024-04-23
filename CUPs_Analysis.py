@@ -12,10 +12,10 @@ analisis de cups
 """
 import pandas as pd
 
-LCCR = pd.read_excel(r"D:\Users\WS-012\Desktop\Outliders\in\VENTA-COSTOS UNITARIOS CX LCCR.xlsx", engine='openpyxl', sheet_name='default_1', dtype=str) 
-HUDN = pd.read_excel(r"D:\Users\WS-012\Desktop\Outliders\in\VENTAS UNITARIAS CX HUDN 1.xlsx", engine='openpyxl', sheet_name='default_1', dtype=str) 
+LCCR = pd.read_excel(r"\in\LCCR.xlsx", engine='openpyxl', sheet_name='default_1', dtype=str) 
+HUDN = pd.read_excel(r"\in\HUDN.xlsx", engine='openpyxl', sheet_name='default_1', dtype=str) 
 
-CUPS = pd.read_excel(r"D:\Users\WS-012\Desktop\Outliders\in\CUPS Cirugia.xls",sheet_name='CUPS x Especialidad',  dtype=str) 
+CUPS = pd.read_excel(r"\in\CUPS Cirugia.xls",sheet_name='CUPS x Especialidad',  dtype=str) 
 
 LCCR.columns
 HUDN.columns
@@ -184,12 +184,11 @@ Ventas_Costos_sin_outliers_cup_unico = Ventas_Costos_sin_outliers_cup_unico.drop
 
 
 # =============================== OUT DATA ====================================
-Ventas.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\1.LCCR_HUDN_Concatenadas.xlsx", index=False)
-Ventas_Costos_filtradas.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\2.Ventas_Costos_CUPs_filtradas.xlsx", index=False)
-Ventas_sin_outliers.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\3A.Ventas_sin_outliers.xlsx", index=False)
-COSTO_sin_outliers.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\3B.COSTO_sin_outliers.xlsx", index=False)
-Ventas_Costos_outliers.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\3C.Ventas_outliers.xlsx", index=False)
+Ventas.to_excel(r"\out\1.LCCR_HUDN_Concatenadas.xlsx", index=False)
+Ventas_Costos_filtradas.to_excel(r"\out\2.Ventas_Costos_CUPs_filtradas.xlsx", index=False)
+Ventas_sin_outliers.to_excel(r"\out\3A.Ventas_sin_outliers.xlsx", index=False)
+COSTO_sin_outliers.to_excel(r"\out\3B.COSTO_sin_outliers.xlsx", index=False)
+Ventas_Costos_outliers.to_excel(r"\out\3C.Ventas_outliers.xlsx", index=False)
 
-Ventas_Costos_sin_outliers.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\4.Ventas_Costos_sin_outliers.xlsx", index=False)
-Ventas_Costos_sin_outliers_cup_unico.to_excel(r"D:\Users\WS-012\Desktop\Outliders\out\5.Ventas_Costos_sin_outliers_cup_unico.xlsx", index=False)
-
+Ventas_Costos_sin_outliers.to_excel(r"\out\4.Ventas_Costos_sin_outliers.xlsx", index=False)
+Ventas_Costos_sin_outliers_cup_unico.to_excel(r"\out\5.Ventas_Costos_sin_outliers_cup_unico.xlsx", index=False)
