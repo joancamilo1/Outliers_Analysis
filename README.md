@@ -33,4 +33,4 @@ Here's how it works:
 - Outliers can also be visualized using box plots, where outliers are represented as individual points outside the "whiskers" of the plot.
 
 
-### By using the interquartile range method, you can systematically identify potential outliers in your dataset and make informed decisions about how to handle them based on the context of your analysis.
+## By using the interquartile range method, you can systematically identify potential outliers in your dataset and make informed decisions about how to handle them based on the context of your analysis.
