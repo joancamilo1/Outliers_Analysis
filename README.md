@@ -4,7 +4,7 @@ Outliers analysis using the interquartile range (IQR) is a method commonly emplo
 Here's how it works:
 
 ## Understanding Quartiles:
-Quartiles divide a dataset into four equal parts.
+- Quartiles divide a dataset into four equal parts.
 
 The first quartile (Q1) represents the 25th percentile, meaning 25% of the data points fall below this value.
 
